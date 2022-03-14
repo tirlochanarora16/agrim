@@ -1,6 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import { IoIosArrowDown } from "react-icons/io";
+import { BsArrowRight } from "react-icons/bs";
 
 import cloudImg from "../../images/cloud.png";
 import securityImg from "../../images/security.png";
@@ -23,13 +25,17 @@ const ExpertItem = (props) => {
           </div>
         ))}
       </div>
+      <div className={style["experts__item--button"]}>
+        <Link href="#">Know More</Link>
+        <BsArrowRight />
+      </div>
     </div>
   );
 };
 
 const Experts = () => {
   return (
-    <div className={style.experts}>
+    <section className={style.experts}>
       <h1>We are experts in:</h1>
       <div className={style["experts__container"]}>
         <ExpertItem
@@ -73,7 +79,7 @@ const Experts = () => {
           ]}
         />
       </div>
-    </div>
+    </section>
   );
 };
 
