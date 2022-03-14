@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  &:hover {
+    background-image: linear-gradient(to right, #5c2dcc, #397de6, #19c8ff);
+    border: none;
+    color: #fff;
+  }
+}

@@ -11,10 +11,8 @@ export default function Home() {
       <Head>
         <title>Agrim</title>
       </Head>
-      <UiContaienr>
-        <Navigation />
-        <Header />
-      </UiContaienr>
+      <Navigation />
+      <Header />
     </Fragment>
   );
 }

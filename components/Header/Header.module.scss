@@ -1,0 +1,66 @@
+.header {
+  padding: 1rem;
+  background-image: url(../../images/dotted-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 87vh;
+
+  &__container {
+    width: 95%;
+    margin: auto;
+
+    display: flex;
+  }
+
+  &__text {
+    align-self: center;
+    flex: 1;
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 3rem;
+      color: #bbbaba;
+    }
+  }
+
+  &__img {
+    flex: 1;
+  }
+
+  &__buttons {
+    margin-top: 4rem;
+
+    & > *:first-child {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid transparent;
+      &:hover {
+        background-image: linear-gradient(to right, #5c2dcc, #397de6, #19c8ff);
+        border: 1px solid transparent;
+      }
+
+      &:hover > a {
+        color: #fff;
+      }
+    }
+
+    & > *:not(:first-child) {
+      margin-left: 1rem;
+      border: 1px solid #fff;
+
+      &:hover {
+        background-image: linear-gradient(to right, #5c2dcc, #397de6, #19c8ff);
+        border: 1px solid transparent;
+        color: #fff !important;
+      }
+      a {
+        &:link,
+        &:visited {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
