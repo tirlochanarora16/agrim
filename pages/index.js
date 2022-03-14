@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Header from "../components/Header/Header";
 import Navigation from "../components/Navigation/Navigation";
-import UiContaienr from "../components/UI/UiContainer";
+import Experts from "../components/Experts/Experts";
 
 export default function Home() {
   return (
@@ -13,6 +13,9 @@ export default function Home() {
       </Head>
       <Navigation />
       <Header />
+      <main>
+        <Experts />
+      </main>
     </Fragment>
   );
 }
