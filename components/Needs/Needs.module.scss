@@ -1,0 +1,63 @@
+.needs {
+  margin-top: 10rem;
+  &__head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5rem;
+    margin-left: 5rem;
+
+    h1 {
+      font-size: 4rem;
+      flex: 1;
+    }
+  }
+
+  &__button {
+    flex: 1;
+    font-size: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s;
+    a {
+      &:link,
+      &:visited {
+        color: #c371ff;
+        text-decoration: none;
+      }
+    }
+
+    svg {
+      fill: #c371ff;
+      margin-left: 0.5rem;
+    }
+
+    &:hover {
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  &__container {
+    margin: 10rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
+  &__item {
+    padding: 1rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #bbbaba;
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
+}
