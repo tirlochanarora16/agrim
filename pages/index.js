@@ -8,6 +8,7 @@ import Needs from "../components/Needs/Needs";
 import CTA from "../components/CTA/Cta";
 import Partners from "../components/Partners/Partners";
 import Clients from "../components/Clients/Clients";
+import Quiz from "../components/Quiz/Quiz";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <CTA />
         <Partners />
         <Clients />
+        <Quiz />
       </main>
     </Fragment>
   );

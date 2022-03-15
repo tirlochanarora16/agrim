@@ -26,11 +26,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr auto 1fr;
-    // padding-right: 3rem;
-    // padding-left: 3rem;
+
     padding: 5rem 3rem;
 
-    border-right: 2px solid #666;
+    border-right: 2px solid #ececec;
     transition: all 0.4s;
 
     &:hover {
