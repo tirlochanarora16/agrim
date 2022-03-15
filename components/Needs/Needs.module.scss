@@ -1,5 +1,12 @@
 .needs {
-  margin-top: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+
+  background-image: url(../../images/needs.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   &__head {
     display: flex;
     justify-content: space-around;
@@ -25,6 +32,7 @@
     a {
       &:link,
       &:visited {
+        cursor: context-menu;
         color: #c371ff;
         text-decoration: none;
       }
@@ -33,10 +41,15 @@
     svg {
       fill: #c371ff;
       margin-left: 0.5rem;
+      transition: all 0.2s;
     }
 
     &:hover {
       letter-spacing: 0.1rem;
+    }
+
+    &:hover svg {
+      transform: translateX(0.5rem);
     }
   }
 

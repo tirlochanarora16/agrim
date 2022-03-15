@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation/Navigation";
 import Experts from "../components/Experts/Experts";
 import Needs from "../components/Needs/Needs";
 import CTA from "../components/CTA/Cta";
+import Partners from "../components/Partners/Partners";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Experts />
         <Needs />
         <CTA />
+        <Partners />
       </main>
     </Fragment>
   );
