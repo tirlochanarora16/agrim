@@ -10,6 +10,7 @@ import Partners from "../components/Partners/Partners";
 import Clients from "../components/Clients/Clients";
 import Quiz from "../components/Quiz/Quiz";
 import Knowledge from "../components/Knowledge/Knowledge";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Quiz />
         <Knowledge />
       </main>
+      <Footer />
     </Fragment>
   );
 }
