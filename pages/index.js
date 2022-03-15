@@ -9,6 +9,7 @@ import CTA from "../components/CTA/Cta";
 import Partners from "../components/Partners/Partners";
 import Clients from "../components/Clients/Clients";
 import Quiz from "../components/Quiz/Quiz";
+import Knowledge from "../components/Knowledge/Knowledge";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Partners />
         <Clients />
         <Quiz />
+        <Knowledge />
       </main>
     </Fragment>
   );
