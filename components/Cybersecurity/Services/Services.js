@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { BsArrowRight } from "react-icons/bs";
+import ButtonGradient from "../../UI/Button";
 import { serviceItemData } from "./ServiceItemdata";
 
 import style from "./Services.module.scss";
@@ -88,7 +89,7 @@ const Services = () => {
           Services.
         </h1>
         <div className={style["services__content--button"]}>
-          <Link href="#">Let's work together</Link>
+          <ButtonGradient />
         </div>
         <div className={style["services__container"]}>
           <ServicesContainer />

@@ -13,14 +13,6 @@ const Header = () => {
           Cloud Services.
         </p>
       </div>
-      {/* <div className={style["header__img"]}>
-        <Image
-          src={headerBackground}
-          alt="agrim cybersecurity header"
-          width={1000}
-          height={400}
-        />
-      </div> */}
     </section>
   );
 };

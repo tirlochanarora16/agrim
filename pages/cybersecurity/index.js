@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navigation from "../../components/Navigation/Navigation";
 import Header from "../../components/Cybersecurity/Header/Header";
 import Services from "../../components/Cybersecurity/Services/Services";
+import GetStarted from "../../components/Cybersecurity/GetStarted/GetStarted";
 
 const Cybersecurity = () => {
   return (
@@ -12,8 +13,11 @@ const Cybersecurity = () => {
         <title>Agrim</title>
       </Head>
       <Navigation />
-      <Header />
-      <Services />
+      <main>
+        <Header />
+        <Services />
+        <GetStarted />
+      </main>
     </Fragment>
   );
 };

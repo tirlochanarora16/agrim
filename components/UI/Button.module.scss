@@ -1,0 +1,79 @@
+.buttonGradient {
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      font-size: 1.4rem;
+      cursor: context-menu;
+      padding: 1rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10%;
+      height: 100%;
+      background-image: linear-gradient(90deg, #5c2dcc, #397de6, #19c8ff);
+      transition: all 0.2s;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
+
+.buttonPurple {
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      cursor: context-menu;
+      padding: 1rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10%;
+      height: 100%;
+      background-color: #a652ff;
+      transition: all 0.2s;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: #fff;
+      border: 1px solid #a652ff;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
