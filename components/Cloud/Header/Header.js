@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headerBackground from "../../../images/Cybersecurity/header.png";
+import headerBackground from "../../../images/Cloud/header.png";
 
 import style from "./Header.module.scss";
 

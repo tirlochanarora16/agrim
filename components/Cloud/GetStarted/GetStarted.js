@@ -1,5 +1,8 @@
 import Image from "next/image";
-import stockmarket from "../../../images/Cybersecurity/stockmarket.png";
+
+import engineer from "../../../images/Cloud/engineer.png";
+import datacenter from "../../../images/Cloud/datacenter.png";
+import stockmarket from "../../../images/Cloud/stockmarket.png";
 
 import { ButtonPurple } from "../../UI/Button";
 
@@ -31,14 +34,14 @@ const GetStatedItems = () => {
       title: "Schedule a consultation",
       text: "Book an appointment with AGRIM Digital & Cloud Services to see how to migrate your business to the Cloud.",
       buttonText: "Let's Talk",
-      img: stockmarket.src,
+      img: engineer.src,
     },
     {
       id: 2,
       title: "Read our Success Stories",
       text: "Find out how we have helped our clients seamlessly migrate their business to the cloud!",
       buttonText: "Act Now",
-      img: stockmarket.src,
+      img: datacenter.src,
     },
     {
       id: 3,

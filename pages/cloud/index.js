@@ -2,11 +2,11 @@ import { Fragment } from "react";
 import Head from "next/head";
 
 import Navigation from "../../components/Navigation/Navigation";
-import Header from "../../components/Cybersecurity/Header/Header";
-import Services from "../../components/Cybersecurity/Services/Services";
-import GetStarted from "../../components/Cybersecurity/GetStarted/GetStarted";
+import Header from "../../components/Cloud/Header/Header";
+import Services from "../../components/Cloud/Services/Services";
+import GetStarted from "../../components/Cloud/GetStarted/GetStarted";
 
-const Cybersecurity = () => {
+const Cloud = () => {
   return (
     <Fragment>
       <Head>
@@ -22,4 +22,4 @@ const Cybersecurity = () => {
   );
 };
 
-export default Cybersecurity;
+export default Cloud;
