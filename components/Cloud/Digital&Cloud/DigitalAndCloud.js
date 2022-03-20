@@ -105,6 +105,16 @@ const DigitalAndCloudImage = () => {
 
 // DIGITAL AND CLOUD --- MAIN COMBINED COMPONENT
 const DigitalAndCloud = () => {
+  // using the context to display to get the current navigation item
+  const digitalAndCloudContext = useContext(DigitalAndCloudContext);
+
+  // fetching the current navigaiton item
+  const currentNavigationItem = digitalAndCloudContext.currentInformation;
+
+  // extracting out the information based on current navigation item
+  const currentInformationToDisplay = digitalAndClouddata.filter(
+    (item) => item.id === currentNavigationItem
+  );
   return (
     <section className={style["digitalAndCloud"]}>
       <div className={style["digitalAndCloud__title"]}>
@@ -115,7 +125,9 @@ const DigitalAndCloud = () => {
       <div className={style["digitalAndCloud__button"]}>
         <ButtonGradient />
       </div>
-      <div className={style["digitalAndCloud__number"]}>01</div>
+      <div className={style["digitalAndCloud__number"]}>
+        0{currentInformationToDisplay[0].number}
+      </div>
       <DigitalAndCloudImage />
     </section>
   );

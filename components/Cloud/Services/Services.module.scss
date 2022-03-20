@@ -61,7 +61,7 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
     h1 {
       grid-column: 1 / 2;
@@ -77,11 +77,12 @@
   }
   &__container {
     grid-column: 2 / -1;
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
 
     margin: 0 4rem;
 
     &--items {
+      height: 100%;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
       grid-auto-rows: 1fr;
