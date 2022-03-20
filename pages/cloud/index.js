@@ -5,6 +5,8 @@ import Navigation from "../../components/Navigation/Navigation";
 import Header from "../../components/Cloud/Header/Header";
 import Services from "../../components/Cloud/Services/Services";
 import GetStarted from "../../components/Cloud/GetStarted/GetStarted";
+import DigitalAndCloud from "../../components/Cloud/Digital&Cloud/DigitalAndCloud";
+import DigitalAndCloudProvider from "../../components/Cloud/context/digital&cloud";
 
 const Cloud = () => {
   return (
@@ -17,6 +19,9 @@ const Cloud = () => {
         <Header />
         <Services />
         <GetStarted />
+        <DigitalAndCloudProvider>
+          <DigitalAndCloud />
+        </DigitalAndCloudProvider>
       </main>
     </Fragment>
   );
