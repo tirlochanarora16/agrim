@@ -8,6 +8,7 @@ import GetStarted from "../../components/Cloud/GetStarted/GetStarted";
 import DigitalAndCloud from "../../components/Cloud/Digital&Cloud/DigitalAndCloud";
 import DigitalAndCloudProvider from "../../components/Cloud/context/digital&cloud";
 import Benefits from "../../components/Cloud/Benefits/Benefits";
+import FAQ from "../../components/FAQ/FAQ";
 
 const Cloud = () => {
   return (
@@ -24,6 +25,7 @@ const Cloud = () => {
           <DigitalAndCloud />
         </DigitalAndCloudProvider>
         <Benefits />
+        <FAQ />
       </main>
     </Fragment>
   );
